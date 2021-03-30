@@ -8,12 +8,23 @@ calcButton.addEventListener('click', function() {
     console.log(addonCheck);
     for( var i = 0; i < addonCheck.length; i++) {
         var thisCheck = addonCheck[i];
+
         console.log( i, thisCheck.checked);
         console.log( i, thisCheck.value);
+
+        if ( thisCheck.checked == true ) {
+            var prezzoAddon = parseInt(thisCheck.value);
+            console.log( i, prezzoAddon );
+            prezzoBaseBurger = prezzoBaseBurger + prezzoAddon;
+        }
+
+
+        
     }
 
+    console.log(prezzoBaseBurger);
 
     //stampare
-    //document.getElementById('price').innerHTML = prezzoBiglietto.toFixed(2);
+    document.getElementById('final-price').innerHTML = prezzoBaseBurger;
 
 });

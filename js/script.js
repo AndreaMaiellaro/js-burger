@@ -1,3 +1,6 @@
+var discountCodes = [123456, 456789, 123789];
+console.log(discountCodes);
+
 //bottone calculate
 var calcButton = document.getElementById('btn-calc');
 calcButton.addEventListener('click', function() {
@@ -16,10 +19,14 @@ calcButton.addEventListener('click', function() {
             var prezzoAddon = parseInt(thisCheck.value);
             console.log( i, prezzoAddon );
             prezzoBaseBurger = prezzoBaseBurger + prezzoAddon;
-        }
+        }     
+    }
 
-
-        
+    var discountUtente = document.getElementById('coupon').value;
+    console.log(discountUtente);
+    if ( discountUtente == discountCodes ) {
+        var percent = (prezzoBaseBurger / 2) *10;
+        prezzoBaseBurger = prezzoBaseBurger - percent;
     }
 
     console.log(prezzoBaseBurger);

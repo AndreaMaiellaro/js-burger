@@ -26,6 +26,7 @@ h1 {
 
 .burger-gen-row {
     padding: 10px;
+    margin-left: 75px;
 }
 
 .burger-ingredients {
@@ -46,7 +47,7 @@ button {
 }
 
 .btn-calc {
-    margin-top: 20px;
+    padding: 20px;
     text-align: center;
 }
 

@@ -5,6 +5,25 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: wheat;
+}
+
+main {
+    background-color: white;
+    width: 60%;
+}
+
+header {
+    background-color: rgb(241, 192, 30);
+    width: 60%;
+    height: 150px;
+}
+
+h1 {
+    padding: 75px;
+}
+
 .burger-gen-row {
     padding: 10px;
 }
@@ -28,4 +47,17 @@ button {
 
 .btn-calc {
     margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(189, 39, 122);
+    width: 60%;
+    height: 100px;
+}
+
+#final-price {
+    color: white;
+    font-size: 25px;
+    text-align: right;
 }

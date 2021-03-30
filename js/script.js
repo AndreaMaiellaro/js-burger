@@ -1,4 +1,4 @@
-var discountCodes = [123456, 456789, 123789];
+var discountCodes = ['123456', '456789', '123789'];
 console.log(discountCodes);
 
 //bottone calculate
@@ -24,8 +24,8 @@ calcButton.addEventListener('click', function() {
 
     var discountUtente = document.getElementById('coupon').value;
     console.log(discountUtente);
-    if ( discountUtente == discountCodes ) {
-        var percent = (prezzoBaseBurger / 2) *10;
+    if ( discountCodes.includes(discountUtente) ) {
+        var percent = prezzoBaseBurger * 0.2;
         prezzoBaseBurger = prezzoBaseBurger - percent;
     }
 

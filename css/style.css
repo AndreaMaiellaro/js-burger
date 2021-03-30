@@ -11,14 +11,20 @@
 
 .burger-ingredients {
     display: inline-block;
+    padding: 20px 20px 20px 0px;
 }
 
 img {
-    height: 45px;
+    height: 40px;
+    vertical-align: middle;
 }
 
 button {
     background-color: rgb(241, 192, 30);
     padding: 10px;
     border-radius: 10px;
+}
+
+.btn-calc {
+    margin-top: 20px;
 }
